@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tasks - Javascript OOP & SOLID Principles</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h2>Tasks - Javascript OOP & SOLID Principles</h2>
+  </header>
+  <main>
+    <div class="task-list-header">
+      <h1 id="task-list-title"></h1>
+      <div class="task-list-controls">
+        <div class="select-input">
+          <label for="filter-status">Filter by:</label>
+          <select id="filter-status" name="filter-status" aria-label="Filter tasks by status">
+            <option value="all" selected>All Status</option>
+            <option value="pending">Pending</option>
+            <option value="in-progress">In Progress</option>
+            <option value="completed">Completed</option>
+          </select>
+          <div class="select-arrow"></div>
+        </div>
+        <button id="add-task-button" class="primary-btn">Add New Task</button>
+      </div>
+    </div>
+    <ul id="task-list"></ul>
+  </main>
+  <footer>
+
+  </footer>
+  <script type="module" src="index.js"></script>
+</body>
+</html>
